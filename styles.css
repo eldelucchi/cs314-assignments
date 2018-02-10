@@ -1,0 +1,117 @@
+/*Scalloped Border found at: https://codepen.io/ongtiffany/pen/rOwryp*/
+@font-face {
+    font-family: 'courgetteregular';
+    src: url('courgette-regular-webfont.eot');
+    src: url('courgette-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('courgette-regular-webfont.woff2') format('woff2'),
+         url('courgette-regular-webfont.woff') format('woff'),
+         url('courgette-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+html{
+  cursor: default;
+  font-family: 'courgetteregular', Arial, sans-serif;
+}
+
+#links{
+  display: inline-flex;
+  height: 75px;
+  width: 100%;
+  float:right;
+  justify-content: flex-end;
+}
+
+.linkType{
+  padding: 1em;
+}
+
+.mainHeader{
+  height: 150px;
+  text-align: center;
+  font-weight: normal;
+  font-style: normal;
+}
+
+#headerText{
+  padding: 1em;
+}
+
+.aboutMe{
+  height: 200px;
+  text-align: center;
+  display: flex;
+  background-color: #0C6674;
+  flex-wrap: wrap;
+  padding: 0;
+  justify-content: center;
+}
+
+.aboutMeText{
+  padding: 1em;
+}
+
+.aboutMeP{
+    font-family: Cambria;
+    padding: 5px;
+}
+
+/*The following section's radial-gradient function was created by Tiffany Ong. Credit at top*/
+.aboutMe::after {
+  position:relative;
+  top:20px;
+  width: 100%;
+  content:" ";
+  padding: 0px;
+  background:
+  radial-gradient(circle at 50% 0%, #0C6674 25%, #FFFFFF 26%, #FFFFFF 40%);
+  background-color: #white;
+  background-size:50px 100px;
+  height:50px;
+  background-repeat: repeat-x;
+}
+
+#pictures{
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#buttonArea{
+  height: 215px;
+  background: #d7f8ee;
+
+}
+
+#button{
+  position: relative;
+  border: solid 1px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-color: #0C6674;
+  border-width: medium;
+  border-style: solid;
+  border-radius: 10px;
+  cursor: pointer;
+  background: black;
+  color: white;
+  padding: 10px;
+}
+
+#button:hover{
+  opacity: 0.5;
+  transform: translate(-50%, -50%) scale(1.5);
+}
+#button:active{
+  background-color: cyan;
+}
+.copyright{
+  background: black;
+  color: white;
+}
+.whitespace{
+  height: 75px;
+}
