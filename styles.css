@@ -1,0 +1,185 @@
+/*Scalloped Border found at: https://codepen.io/ongtiffany/pen/rOwryp*/
+@font-face {
+    font-family: 'kavivanarregular';
+    src: url('kavivanar-regular-webfont.eot');
+    src: url('kavivanar-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('kavivanar-regular-webfont.woff2') format('woff2'),
+         url('kavivanar-regular-webfont.woff') format('woff'),
+         url('kavivanar-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'latoregular';
+    src: url('lato-regular-webfont.eot');
+    src: url('lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('lato-regular-webfont.woff2') format('woff2'),
+         url('lato-regular-webfont.woff') format('woff'),
+         url('lato-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html{
+  cursor: default;
+  font-family: 'kavivanarregular', Helvetica, sans-serif;
+}
+
+#links{
+  display: inline-flex;
+  height: 75px;
+  width: 100%;
+  float:right;
+  justify-content: flex-end;
+}
+
+.linkType{
+  padding: 1em;
+}
+
+.mainHeader{
+  height: 150px;
+  text-align: center;
+  font-weight: normal;
+  font-style: normal;
+}
+
+#headerText{
+  padding: 1em;
+}
+
+.aboutMeSection{
+  height: 300px;
+  text-align: center;
+  display: flex;
+  background-color: #0C6674;
+  flex-wrap: wrap;
+  padding: 0;
+  justify-content: center;
+}
+
+.aboutMeText{
+  padding: 1em;
+}
+
+.aboutMeP{
+    font-family: 'latoregular', sans-serif;
+    padding: 10px;
+}
+
+/*The following section's radial-gradient function was created by Tiffany Ong. Credit at top*/
+.aboutMeSection::after {
+  position:relative;
+  top:20px;
+  width: 100%;
+  content:" ";
+  padding: 0px;
+  background:
+  radial-gradient(circle at 50% 0%, #0C6674 25%, #FFFFFF 26%, #FFFFFF 40%);
+  background-color: #white;
+  background-size:50px 100px;
+  height:50px;
+  background-repeat: repeat-x;
+}
+
+#pictures{
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#buttonArea{
+  height: 215px;
+  background-image: radial-gradient(#339966, #d7f8ee);
+}
+
+#button{
+  position: relative;
+  border: solid 1px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-color: #0C6674;
+  border-width: medium;
+  border-style: solid;
+  border-radius: 10px;
+  cursor: pointer;
+  background: black;
+  color: white;
+  padding: 10px;
+}
+
+#button:hover{
+  opacity: 0.5;
+  transform: translate(-50%, -50%) scale(1.25);
+}
+#button:active{
+  background-color: #ffc2b3;
+}
+
+.gallery{
+  height: 750px;
+  background: #6666ff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.image{
+  padding: 20px;
+}
+
+.copyright{
+  background: black;
+  color: white;
+}
+.whitespace{
+  height: 75px;
+}
+
+body{
+  background-color: #4d4dff;
+}
+
+.item{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  padding: 20px;
+}
+
+.item:hover{
+  transform: rotate(30deg);
+}
+
+@-webkit-keyframes fadeinout {
+ 0% { opacity: 0; }
+ 100% { opacity: 1; }
+}
+@-moz-keyframes fadeinout {
+ 0% { opacity: 0; }
+ 100% { opacity: 1; }
+}
+@-o-keyframes fadeinout {
+ 0% { opacity: 0; }
+ 100% { opacity: 1; }
+}
+@keyframes fadeinout {
+ 0% { opacity: 0; }
+ 100% { opacity: 1; }
+}
+
+.item:active{
+ -webkit-animation: fadeinout 5s infinite; /* Safari 4+ */
+ -moz-animation: fadeinout 5s infinite; /* Fx 5+ */
+ -o-animation: fadeinout 5s infinite; /* Opera 12+ */
+ animation: fadeinout 5s infinite; /* IE 10+, Fx 29+ */
+}
