@@ -1,0 +1,146 @@
+@font-face {
+  font-family: 'robotoregular';
+  src: url('roboto-regular-webfont.eot');
+  src: url('roboto-regular-webfont.eot?#iefix') format('embedded-opentype'), url('roboto-regular-webfont.woff2') format('woff2'), url('roboto-regular-webfont.woff') format('woff'), url('roboto-regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'shadows_into_lightregular';
+  src: url('shadowsintolight-webfont.eot');
+  src: url('shadowsintolight-webfont.eot?#iefix') format('embedded-opentype'), url('shadowsintolight-webfont.woff2') format('woff2'), url('shadowsintolight-webfont.woff') format('woff'), url('shadowsintolight-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotomedium';
+  src: url('roboto-medium-webfont.eot');
+  src: url('roboto-medium-webfont.eot?#iefix') format('embedded-opentype'), url('roboto-medium-webfont.woff2') format('woff2'), url('roboto-medium-webfont.woff') format('woff'), url('roboto-medium-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  text-align: center;
+  font-family: 'robotoregular', Arial, sans-serif;
+}
+
+header {
+  height: 300px;
+  background-color: #041e42;
+  color: #C8102E;
+  font-family: 'shadows_into_lightregular', Arial, sans-serif;
+  padding: 2em;
+}
+
+.headerInner {
+  padding: 1em;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 500px;
+}
+
+.secondclasstext {
+  font-family: 'robotomedium', Arial, sans-serif;
+  color: #C1C6C8;
+  padding: 1em;
+}
+
+section {
+  padding: 2em;
+  max-width: 500px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+label {
+  display: block;
+  /*For labels to block with what they correspond to*/
+  text-align: left;
+  padding: 1em 0 5px;
+}
+
+input, select, textarea {
+  width: 100%;
+  box-sizing: border-box;
+  font-family: Arial;
+  border: 2px #7c93b7 solid;
+  border-radius: 3px;
+  padding: 0.5em;
+  color: #C8102E;
+}
+
+.bigInput {
+  height: 100px;
+  resize: none;
+  color: #C8102E;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #041e42;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #C8102E;
+}
+
+select {
+  background-color: white;
+}
+
+.radio-container {
+  /*Outer one*/
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1em;
+}
+
+.radio-container label {
+  display: inline;
+  transform: translateY(-40%);
+}
+
+.radio-container input {
+  width: auto;
+}
+
+input[type="submit"] {
+  width: auto;
+  padding: 10px 20px;
+  margin-top: 2em;
+  transition: 0.4s ease;
+}
+
+input[type="submit"]:hover {
+  color: #000000;
+  background: #C1C6C8;
+  cursor: pointer;
+}
+
+input:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.radio-container input {
+  width: auto;
+  box-shadow: none;
+}
+
+@media only screen and (max-width: 768px) {}
+
+@media only screen and (max-width: 482px) {
+  .headerInner {
+    font-size: 75%;
+  }
+}
+
+@media only screen and (max-width: 353px) {
+  .headerInner {
+    font-size: 60%;
+  }
+}

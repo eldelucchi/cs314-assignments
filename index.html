@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <title>Emma Delucchi Homework 5</title>
+</head>
+
+<body>
+  <header class="headSection">
+    <div class="headerInner">
+      <h1>Gonzaga Women's Rowing Questionnaire</h1>
+      <h4 class="secondclasstext">Enter relevent information below</h6>
+    </div>
+  </header>
+  <section class="enterInformation">
+    <form class="" action="index.html" method="post">
+      <label for="firstName">First Name</label>
+      <input type="text" name="firstName" placeholder="Enter your first name">
+      <label for="lastName">Last Name</label>
+      <input type="text" name="lastName" placeholder="Enter your last name">
+      <label for="email">Primary Email</label>
+      <input type="email" name="email" placeholder="Enter your primary email address">
+      <label for="birthday">Date of Birth</label>
+      <input type="date" onfocus="this.value=''" name="birthday">
+      <label for="yearsRowing">Number of Years Rowing</label>
+      <input type="yearsRowing" name="yearsRowing" placeholder="Years">
+      <label for="gradYear">High School Grad Year</label>
+      <input type="gradYear" name="gradYear" placeholder="Enter grad year">
+      <label for="height">Height</label>
+      <input type="height" name="height" placeholder="Enter height">
+      <label for="2k">2k Personal Best</label>
+      <input type="text" name="2k" placeholder="Enter 2k total time">
+      <div class="radio-container">
+        <label for="program1">Club</label>
+        <input type="radio" name="program" id="program1" placeholder="Club">
+        <label for="program2">School</label>
+        <input type="radio" name="program" id="program2" placeholder="School">
+        <label for="program3">Both</label>
+        <input type="radio" name="program" id="program3" placeholder="Both">
+      </div>
+      <select class="dropDown" name="dropDown">
+        <option value="side">Port</option>
+        <option value="side">Starboard</option>
+        <option value="side">Coxswain</option>
+      </select>
+      <label for="releventFinishes">Relevent Race Finishes (Race name, date, boat, finish)</label>
+      <textarea name="releventFinishes" rows="8" cols="80 class="bigInput" placeholder="Enter relevent finishes""></textarea>
+      <input type="submit" name="enterButton" value="SUBMIT">
+    </form>
+    </section>
+    <footer>
+      <p class="copyright">Copyright 2018</p>
+      <div class="whitespace">
+      </div>
+    </footer>
+  </body>
+</html>
