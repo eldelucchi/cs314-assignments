@@ -1,0 +1,13 @@
+.post-container {
+  border: 2px solid aquamarine;
+  background: rgba(0, 0, 0, 0.03);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 50px;
+}
+
+header {
+  text-align: center;
+  height: auto;
+  background-color: '#6495ed';
+}
