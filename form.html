@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--reference to css style sheets-->
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Emma's Final Project</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="full-page-background"></div>
+    <div class="bodyWrapper">
+      <header>
+        <div class="headerInner">
+          <nav>
+            <ul class="navBar">
+              <li class="navBarLinks"><a href="homepage.html">Overview</a></li>
+              <li class="navBarLinks"><a href="education.html">Education</a></li>
+              <li class="navBarLinks"><a href="workExperience.html">Work Experience</a></li>
+              <li class="navBarLinks"><a href="leadershipExperience.html">Leadership Experience</a></li>
+              <li class="navBarLinks"><a href="form.html">Form</a></li>
+              <li class="navBarLinks"><a href="map.html">My Hometown</a></li>
+              <li class="navBarLinks"><a href="apiPage.html">API</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <section class="nameSection">
+        <div class="nameSectionInner">
+          <p class="nameSectionName">Hi, I'm Emma Delucchi.</p>
+        </div>
+      </section>
+      <section class="spaceFill">
+      </section>
+      <section class="whoAmIForm">
+        <div class="whoAmIFormInner">
+          <h4>Leave a comment!</h4>
+        </div>
+      </section>
+      <section class="enterInformation">
+        <form id="form" action="form.html" method="post">
+          <label for="firstName">First Name</label>
+          <input id="firstNameInput" type="text" name="firstName" placeholder="Enter your first name">
+          <label for="lastName">Last Name</label>
+          <input id="lastNameInput" type="text" name="lastName" placeholder="Enter your last name">
+          <label for="email">Primary Email</label>
+          <input id="emailInput" type="email" name="email" placeholder="Enter your primary email address">
+          <label for="releventFinishes">What do you want to let me know?</label>
+          <textarea id="textInput" name="releventFinishes" rows="8" cols="80" class="bigInput" placeholder="Take it away"></textarea>
+          <input class="enterButton" type="submit" name="enterButton" value="SUBMIT">
+        </form>
+        </section>
+
+
+    <script src="form.js"></script>
+  </body>
+</ht

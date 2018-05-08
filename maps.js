@@ -153,22 +153,58 @@ function initMap() {
       }
     ]
   });
+
+  let home = {
+    lat: 47.620385,
+    lng: -122.303886
+  }
+
+  let homeMarker = new google.maps.Marker({
+    position: home,
+    map: map
+  });
+
+  let homeInfoWindow = new google.maps.InfoWindow({
+    content: '<h5>My Home</h5>'
+  });
+
+  homeMarker.addListener('click', function() {
+    infoWindow.open(map, marker);
+  })
+
+  let work = {
+    lat: 47.642940,
+    lng: -122.343331
+  }
+
+  let workMarker = new google.maps.Marker({
+    position: work,
+    map: map
+  });
+
+  let workInfoWindow = new google.maps.InfoWindow({
+    content: '<h5>My Work</h5>'
+  });
+
+  workMarker.addListener('click', function() {
+    infoWindow.open(map, marker);
+  })
+
+  let pretzelPlace = {
+    lat: 47.648958,
+    lng: -122.344642
+  }
+
+  let pretzelMarker = new google.maps.Marker({
+    position: pretzelPlace,
+    map: map
+  });
+
+  let pretzelInfoWindow = new google.maps.InfoWindow({
+    content: '<h5>The Place with The Goddamn Pretzels</h5>'
+  });
+
+  marker.addListener('click', function() {
+    infoWindow.open(map, pretzelMarker);
+  })
 }
-
-let homeMarker = {
-  lat: 47.620385,
-  lng: -122.303886
-}
-
-let marker = new google.maps.Marker({
-  position: homeMarker,
-  map: map
-});
-
-let infoWindow = new google.maps.InfoWindow({
-  content: '<h5>Manito Park</h5>'
-});
-
-marker.addListener('click', function() {
-  infoWindow.open(map, marker);
-})
