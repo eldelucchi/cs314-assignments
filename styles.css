@@ -1,0 +1,475 @@
+/*Photo by Roman Pohorecki from Pexels https://www.pexels.com/photo/architecture-aurora-bridge-boats-bridge-23383/*/
+
+@font-face {
+  font-family: 'josefin_sansbold';
+  src: url('josefinsans-bold-webfont.eot');
+  src: url('josefinsans-bold-webfont.eot?#iefix') format('embedded-opentype'), url('josefinsans-bold-webfont.woff2') format('woff2'), url('josefinsans-bold-webfont.woff') format('woff'), url('josefinsans-bold-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'josefin_sansitalic';
+  src: url('josefinsans-italic-webfont.eot');
+  src: url('josefinsans-italic-webfont.eot?#iefix') format('embedded-opentype'), url('josefinsans-italic-webfont.woff2') format('woff2'), url('josefinsans-italic-webfont.woff') format('woff'), url('josefinsans-italic-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'josefin_sansregular';
+  src: url('josefinsans-regular-webfont.eot');
+  src: url('josefinsans-regular-webfont.eot?#iefix') format('embedded-opentype'), url('josefinsans-regular-webfont.woff2') format('woff2'), url('josefinsans-regular-webfont.woff') format('woff'), url('josefinsans-regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'patrick_handregular';
+  src: url('patrickhand-regular-webfont.eot');
+  src: url('patrickhand-regular-webfont.eot?#iefix') format('embedded-opentype'), url('patrickhand-regular-webfont.woff2') format('woff2'), url('patrickhand-regular-webfont.woff') format('woff'), url('patrickhand-regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-family: 'josefin_sansregular', Arial, sans-serif;
+}
+
+header {
+  font-family: 'josefin_sansregular', Arial, sans-serif;
+  height: auto;
+  background-color: tranparent;
+}
+
+.headerInner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 1.5em;
+}
+
+header nav {
+  width: 100%;
+  text-align: center;
+}
+
+.navBar {
+  list-style-type: none;
+  padding: 1em;
+}
+
+.navBarLinks {
+  display: inline-block;
+  line-height: 20px;
+  padding: 8px 0 8px;
+  margin: 0 20px;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+.navBarLinks a {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+.navBarLinks a.active {
+  color: white;
+}
+
+li a:hover:not(.active) {
+  transform: scale(1.1);
+  transition-duration: 0.2s;
+}
+
+/*Image scrolling behind on a page*/
+
+.full-page-background {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-image: url("https://images.pexels.com/photos/23383/pexels-photo.jpg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb");
+  background-size: cover;
+  z-index: -1;
+}
+
+.nameSection, .educationIntro, .workIntro, .leadershipIntro {
+  height: 300px;
+  text-align: center;
+}
+
+.nameSectionInner, .educationIntroInner, .workIntroContent, .leadershipIntroContent {
+  max-width: 700px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'josefin_sansregular', Arial, sans-serif;
+}
+
+.nameSectionName {
+  font-family: 'josefin_sansregular', Arial, sans-serif;
+  text-transform: none;
+  font-size: 4em;
+  padding-top: 2em;
+}
+
+.spaceFill {
+  height: 300px;
+}
+
+.floatingBoxes {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.25);
+  z-index: -1;
+  font-size: 1.25em;
+}
+
+.whoAmI, .whoAmIEducation, .whoAmIWork, .whoAmILeadership {
+  background-color: rgba(255, 255, 255, 0.75);
+  height: 400px;
+  background-color: tranparent;
+  text-align: center;
+  font-family: 'josefin_sansregular', Arial, sans-serif;
+}
+
+.whoAmI img {
+  padding: 10px;
+}
+
+.whoAmI h4 {
+  padding: 1em;
+  font-size: 2em;
+}
+
+.whoAmI p {
+  padding: 10px;
+  font-size: 1.5em;
+}
+
+.whoAmIInner, .whoAmIEducationInner, .whoAmIWorkInner, .whoAmILeadershipInner {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.whoAmIEducationInner h4, .whoAmIWorkInner h4, .whoAmILeadershipInner h4 {
+  padding: 10px;
+}
+
+.translucentBox {
+  height: 400px;
+  width: 50%;
+  box-sizing: border-box;
+  background-color: gray;
+  text-align: center;
+}
+
+.translucentBox i {
+  font-size: 2em;
+}
+
+.boxItem {
+  height: 400px;
+  width: 50%;
+  box-sizing: border-box;
+  background-color: white;
+  opacity: 50%;
+  text-align: center;
+}
+
+.sumQual1 {
+  align-self: flex-end;
+}
+
+.sumQual2 {
+  align-self: flex-start;
+}
+
+.sumQual3 {
+  align-self: flex-end;
+}
+
+.boxItem p {
+  position: relative;
+  max-width: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.gonzaga, .holyNames {
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0);
+  box-sizing: border-box;
+}
+
+.gonzagaPrime {
+  height: 300px;
+  box-sizing: border-box;
+  float: right;
+  background-color: white;
+}
+
+.holyNamesPrime {
+  height: 300px;
+  box-sizing: border-box;
+  float: left;
+  background-color: white;
+}
+
+.gonzagaInner, .holyNamesInner {
+  height: 300px;
+  position: relative;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.75)
+}
+
+.gonzagaInnerGrouper, .holyNamesInnerGrouper {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.gonzagaPrime img, .holyNamesPrime img {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.textSpace h3, .textSpace h4, .textSpace ul, .textSpace p {
+  padding: 5px;
+}
+
+.pair {
+  display: inline-block;
+  position: relative;
+  width: 50%;
+}
+
+.moreAboutMe {
+  text-align: center;
+  font-size: 1.25em;
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.moreAboutMeInner {
+  max-width: 500px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.moreAboutMe p, .moreAboutMe ul {
+  padding: 10px;
+}
+
+.contactMe {
+  height: 300px;
+  background-color: white;
+}
+
+.contactInner {
+  position: relative;
+  text-align: center;
+  max-width: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contactInner i {
+  font-size: 4em;
+  color: black;
+  padding: 5px;
+}
+
+.contactInner i:hover:not(.active) {
+  transform: scale(1.1);
+  transition-duration: 0.2s;
+}
+
+.footerDiv {
+  height: 100px;
+  background-color: white;
+  text-align: center;
+}
+
+.footerDiv h5 {
+  padding: 10px;
+  font-family: 'josefin_sansregular', Arial, sans-serif;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.workExperience {
+  height: 1100px;
+  background: white;
+}
+
+.leadershipExperience {
+  height: 700px;
+  background: white;
+}
+
+.textWrapper {
+  text-align: center;
+  position: relative;
+  max-width: 500px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.jobWrapper {
+  padding: 10px;
+}
+
+.jobWrapper h4, .jobWrapper h3, .jobWrapper ul {
+  padding: 5px;
+}
+
+@media only screen and (max-width: 768px) {}
+
+@media only screen and (max-width: 615px) {
+  .gonzagaPrime, .holyNamesPrime {
+    display: none;
+  }
+  .gonzagaInner, .holyNamesInner {
+    width: 100%
+  }
+}
+
+@media only screen and (max-width: 353px) {
+  .headerInner {
+    font-size: 60%;
+  }
+}
+
+.mapSection {
+  height: 500px;
+}
+
+#map {
+  height: 100%;
+}
+
+.whoAmIMaps, .whoAmIApi, .whoAmIForm {
+  background-color: rgba(255, 255, 255, 0.75);
+  height: 220px;
+  background-color: tranparent;
+  text-align: center;
+  font-family: 'josefin_sansregular', Arial, sans-serif;
+}
+
+.whoAmIMapsInner, .whoAmIApiInner, .whoAmIFormInner {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.user {
+  background-color: rgba(255, 255, 255, 0.75);
+  height: auto;
+  background-color: tranparent;
+  text-align: center;
+  font-family: 'josefin_sansregular', Arial, sans-serif;
+  padding: 20px;
+}
+
+.user p {
+  text-align: center;
+  padding: 10px;
+  border-style: solid;
+  border-color: grey;
+}
+
+button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+#get-another-quote-button {
+  border: solid 1px;
+  top: 50%;
+  left: 50%;
+  border-color: 200;
+  border-width: medium;
+  border-style: solid;
+  border-radius: 5px;
+  cursor: pointer;
+  background: tranparent;
+  color: black;
+  padding: 5px 20px 5px 20px;
+  margin-top: 20px;
+  font-family: "josefin_sansregular", Arial, sans-serif;
+  margin: 20px;
+}
+
+/*Form Stuff*/
+
+.enterInformation {
+  background-color: white;
+}
+
+label {
+  display: block;
+  /*For labels to block with what they correspond to*/
+  text-align: left;
+  padding: 1em 0 5px;
+}
+
+input, select, textarea {
+  width: 100%;
+  box-sizing: border-box;
+  font-family: Arial;
+  border: 2px #7c93b7 solid;
+  border-radius: 3px;
+  padding: 0.5em;
+  color: #C8102E;
+}
+
+.bigInput {
+  height: 100px;
+  resize: none;
+  color: #C8102E;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #041e42;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #C8102E;
+}
+
+select {
+  background-color: white;
+}
+
+input[type="submit"] {
+  width: auto;
+  padding: 10px 20px;
+  margin-top: 2em;
+  transition: 0.4s ease;
+}
+
+input[type="submit"]:hover {
+  color: #000000;
+  background: #C1C6C8;
+  cursor: pointer;
+}
+
+input:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
